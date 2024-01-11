@@ -1,0 +1,85 @@
+.customer-reviews {
+  width: 1174px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    font-size: 35px;
+    line-height: 51.87px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  .slider-comments-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 30px;
+
+    &__arrow-left {
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      transform: translateY(-50%);
+    }
+
+    &__arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+    }
+
+    &__card {
+      width: 323px;
+      text-align: center;
+
+      span:nth-child(1) {
+        width: 79px;
+        height: 79px;
+        border: 1px solid #EB6D9D;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        font-size: 45px;
+        line-height: 70px;
+        font-family: 'Oswald';
+      }
+
+      span:nth-child(2) {
+        display: block;
+        margin-top: 10px;
+      }
+
+      span:nth-last-child(1) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19.5px;
+        margin-top: 5px;
+        display: block;
+      }
+
+      p {
+        text-align: justify;
+        font-style: oblique;
+        font-weight: 400;
+        margin: 20px 0px;
+        font-size: 16px;
+        line-height: 19.5px;
+      }
+
+      a {
+        display: block;
+        color: #DF001C;
+        font-weight: 500;
+      }
+
+    }
+  }
+}

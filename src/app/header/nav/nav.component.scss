@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__container {
+    width: 1174px;
+    display: flex;
+    flex-direction: row;
+
+    &__logo {
+      width: 50%;
+      margin-top: 88px;
+
+      img {
+        width: 251.32px;
+        height: 86.92px;
+      }
+    }
+
+    &__tools {
+      width: 50%;
+      margin-top: 58px;
+
+      &__helpful-links {
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          gap: 35px;
+          justify-content: end;
+
+        }
+
+        ul li {
+          display: inline-block;
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #000100;
+        }
+      }
+
+      &__search {
+        margin-top: 30px;
+
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+          justify-content: end;
+        }
+
+        ul li {
+          display: inline-block;
+        }
+
+        ul>li:nth-child(1) {
+          position: relative;
+        }
+
+        ul>li:nth-child(1) fa-icon {
+          position: absolute;
+          right: 10px;
+          top: 5px;
+          color: #AFAFAF;
+        }
+
+        ul li input[type="search"] {
+          width: 325px;
+          height: 100%;
+          border: 1px solid #AFAFAF;
+          padding-left: 10px;
+        }
+
+        ul>li:nth-last-child(1) {
+          position: relative;
+          margin-right: 5px;
+        }
+
+        ul>li:nth-last-child(1) span {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          background-color: red;
+          color: white;
+          text-align: center;
+          border-radius: 50%;
+          position: absolute;
+          top: 2px;
+          left: 8px;
+        }
+
+      }
+    }
+  }
+
+  &__menu {
+    width: 1174px;
+    margin-top: 10px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 6%;
+      justify-content: end;
+    }
+
+    ul li {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 26.68px;
+      font-weight: 400;
+    }
+
+    ul li a {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    ul li:nth-child(1) a {
+      color: #EB6D9D;
+    }
+  }
+}
